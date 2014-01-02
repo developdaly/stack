@@ -20,12 +20,7 @@ module.exports = function(grunt) {
           ]
         },
         options: {
-          compress: true,
-          // LESS source map
-          // To enable, set sourceMap to true and update sourceMapRootpath based on your install
-          sourceMap: false,
-          sourceMapFilename: 'assets/css/main.min.css.map',
-          sourceMapRootpath: '/app/themes/roots/'
+          compress: true
         }
       }
     },
@@ -33,43 +28,29 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/js/scripts.min.js': [
-            'assets/js/plugins/bootstrap/transition.js',
-            'assets/js/plugins/bootstrap/alert.js',
-            'assets/js/plugins/bootstrap/button.js',
-            'assets/js/plugins/bootstrap/carousel.js',
-            'assets/js/plugins/bootstrap/collapse.js',
-            'assets/js/plugins/bootstrap/dropdown.js',
-            'assets/js/plugins/bootstrap/modal.js',
-            'assets/js/plugins/bootstrap/tooltip.js',
-            'assets/js/plugins/bootstrap/popover.js',
-            'assets/js/plugins/bootstrap/scrollspy.js',
-            'assets/js/plugins/bootstrap/tab.js',
-            'assets/js/plugins/bootstrap/affix.js',
-            'assets/js/plugins/*.js',
+            'assets/js/vendor/bootstrap/bootstrap-transition.js',
+            'assets/js/vendor/bootstrap/bootstrap-alert.js',
+            'assets/js/vendor/bootstrap/bootstrap-button.js',
+            'assets/js/vendor/bootstrap/bootstrap-carousel.js',
+            'assets/js/vendor/bootstrap/bootstrap-collapse.js',
+            'assets/js/vendor/bootstrap/bootstrap-dropdown.js',
+            'assets/js/vendor/bootstrap/bootstrap-modal.js',
+            'assets/js/vendor/bootstrap/bootstrap-tooltip.js',
+            'assets/js/vendor/bootstrap/bootstrap-popover.js',
+            'assets/js/vendor/bootstrap/bootstrap-scrollspy.js',
+            'assets/js/vendor/bootstrap/bootstrap-tab.js',
+            'assets/js/vendor/bootstrap/bootstrap-affix.js',
+            'assets/js/vendor/*.js',
             'assets/js/_*.js'
           ]
-        },
-        options: {
-          // JS source map: to enable, uncomment the lines below and update sourceMappingURL based on your install
-          // sourceMap: 'assets/js/scripts.min.js.map',
-          // sourceMappingURL: '/app/themes/roots/assets/js/scripts.min.js.map'
         }
-      }
-    },
-    version: {
-      options: {
-        file: 'lib/scripts.php',
-        css: 'assets/css/main.min.css',
-        cssHandle: 'roots_main',
-        js: 'assets/js/scripts.min.js',
-        jsHandle: 'roots_scripts'
       }
     },
     watch: {
       less: {
         files: [
           'assets/less/*.less',
-          'assets/less/bootstrap/*.less'
+          'assets/less/bootstrap-2.3.2/*.less'
         ],
         tasks: ['less', 'version']
       },
@@ -87,9 +68,7 @@ module.exports = function(grunt) {
         },
         files: [
           'assets/css/main.min.css',
-          'assets/js/scripts.min.js',
-          'templates/*.php',
-          '*.php'
+          'assets/js/scripts.min.js'
         ]
       }
     },
@@ -107,14 +86,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-wp-version');
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
     'less',
-    'uglify',
-    'version'
+    'uglify'
   ]);
   grunt.registerTask('dev', [
     'watch'
