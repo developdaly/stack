@@ -1,5 +1,4 @@
-[HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
 # Usage
 
@@ -8,10 +7,8 @@ usually involves the following:
 
 1. Set up the basic structure of the site.
 2. Add some content, style, and functionality.
-3. Run your site locally to see how it looks.
-4. (Optionally run a build script to automate the optimization of your site -
-   e.g. [ant build script](https://github.com/h5bp/ant-build-script) or [node
-   build script](https://github.com/h5bp/node-build-script)).
+3. Run the build script to automate the optimization of your site -
+4. Run your site locally to see how it looks.
 5. Deploy your site.
 
 
@@ -23,7 +20,6 @@ A basic HTML5 Boilerplate site initially looks something like this:
 .
 ├── css
 │   ├── main.css
-│   └── normalize.css
 ├── doc
 ├── img
 ├── js
@@ -31,8 +27,13 @@ A basic HTML5 Boilerplate site initially looks something like this:
 │   ├── plugins.js
 │   └── vendor
 │       ├── jquery.min.js
-│       └── modernizr.min.js
-├── .htaccess
+│       ├── modernizr.min.js
+│       └── bootstrap
+│           └── bootstrap.js
+├── less
+│   ├── app.less
+│   └── bootstrap
+│       └── bootstrap.less
 ├── 404.html
 ├── apple-touch-icon-precomposed.png
 ├── index.html
@@ -46,13 +47,12 @@ What follows is a general overview of each major part and how to use them.
 
 ### css
 
-This directory should contain all your project's CSS files. It includes some
-initial CSS to help get you started from a solid foundation. [About the
+This directory should contain all your project's CSS files. [About the
 CSS](css.md).
 
 ### doc
 
-This directory contains all the HTML5 Boilerplate documentation. You can use it
+This directory contains all the Stack documentation. You can use it
 as the location and basis for your own project's documentation.
 
 ### js
@@ -60,16 +60,6 @@ as the location and basis for your own project's documentation.
 This directory should contain all your project's JS files. Libraries, plugins,
 and custom code can all be included here. It includes some initial JS to help
 get you started. [About the JavaScript](js.md).
-
-### .htaccess
-
-The default web server configs are for Apache. For more information, please
-refer to the [Apache Server Configs
-documentation](https://github.com/h5bp/server-configs-apache/tree/master/doc).
-
-Host your site on a server other than Apache? You're likely to find the
-corresponding server configs project listed in our [Server Configs
-](https://github.com/h5bp/server-configs/blob/master/README.md) repository.
 
 ### 404.html
 
@@ -84,8 +74,8 @@ need to integrate this starting HTML with your setup.
 Make sure that you update the URLs for the referenced CSS and JavaScript if you
 modify the directory structure at all.
 
-If you are using Google Analytics, make sure that you edit the corresponding
-snippet at the bottom to include your analytics ID.
+If you are using Google Tag Manager, make sure that you edit the corresponding
+snippet after `<body>` to include your tag manager ID.
 
 ### humans.txt
 

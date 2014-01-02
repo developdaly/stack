@@ -1,5 +1,4 @@
-[HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
 # The HTML
 
@@ -8,7 +7,7 @@ table of contents](TOC.md)
 A series of IE conditional comments apply the relevant IE-specific classes to
 the `html` tag. This provides one method of specifying CSS fixes for specific
 legacy versions of IE. While you may or may not choose to use this technique in
-your project code, HTML5 Boilerplate's default CSS does not rely on it.
+your project code, The Stack's default CSS does not rely on it.
 
 When using the conditional classes technique, applying classes to the `html`
 element has several benefits:
@@ -84,7 +83,7 @@ intranet sites in Compatibility View' is checked by default.
 There are a few different options that you can use with the [`viewport` meta
 tag](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 "Viewport and
 Media Queries - The Complete Idiot's Guide"). You can find out more in [the
-Apple developer docs](http://j.mp/mobileviewport). HTML5 Boilerplate comes with
+Apple developer docs](http://j.mp/mobileviewport). The Stack comes with
 a simple setup that strikes a good balance for general use cases.
 
 ```html
@@ -93,8 +92,8 @@ a simple setup that strikes a good balance for general use cases.
 
 ## Favicons and Touch Icon
 
-The shortcut icons should be put in the root directory of your site. HTML5
-Boilerplate comes with a default set of icons (include favicon and one Apple
+The shortcut icons should be put in the root directory of your site. The Stack
+ comes with a default set of icons (include favicon and one Apple
 Touch Icon) that you can use as a baseline to create your own.
 
 Please refer to the more detailed description in the [Extend section](extend.md)
@@ -102,7 +101,7 @@ of these docs.
 
 ## Modernizr
 
-HTML5 Boilerplate uses a custom build of Modernizr.
+The Stack uses a custom build of Modernizr.
 
 [Modernizr](http://modernizr.com) is a JavaScript library which adds classes to
 the `html` element based on the results of feature test and which ensures that
