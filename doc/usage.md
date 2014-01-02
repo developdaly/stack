@@ -2,7 +2,7 @@
 
 # Usage
 
-Once you have cloned or downloaded HTML5 Boilerplate, creating a site or app
+Once you have cloned or downloaded The Stack, creating a site or app
 usually involves the following:
 
 1. Set up the basic structure of the site.
@@ -10,6 +10,15 @@ usually involves the following:
 3. Run the build script to automate the optimization of your site -
 4. Run your site locally to see how it looks.
 5. Deploy your site.
+
+During development you may work on `.less` or `.js` files. Grunt will need
+to compile and/or uglify and bundle those files into the single CSS and JS
+files used by the website. You can run those tasks once with the `grunt`
+command. Or you can let Grunt run automatically each time you make changes:
+
+```
+grunt watch
+```
 
 
 ## Basic structure
