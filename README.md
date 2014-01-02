@@ -3,12 +3,6 @@ The Stack
 
 A common web stack.
 
-## Documentation
-
-This documentation is bundled with the project, which makes it readily available
-for offline reading and provides a useful starting point for any documentation you
-want to write about a specific application.
-
 ## Installation
 
 Clone the git repo - `git clone git://github.com/SCUSA/stack.git` - or 
