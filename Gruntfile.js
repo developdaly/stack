@@ -1,14 +1,15 @@
-'use strict';
 module.exports = function(grunt) {
+  'use strict';
 
   grunt.initConfig({
     jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
+      // options: {
+      //   jshintrc: '.jshintrc'
+      // },
       all: [
         'Gruntfile.js',
-        'assets/js/*.js',
+        'assets/js/**/*.js',
+        '!assets/js/vendor/**/*.js',
         '!assets/js/scripts.min.js'
       ]
     },
