@@ -5,7 +5,7 @@ A common web stack.
 
 ## Installation
 
-Clone the git repo - `git clone git://github.com/SCUSA/stack.git` - or 
+Clone the git repo - `git clone git://github.com/developdaly/stack.git` - or 
 [download it](https://github.com/SCUSA/stack/zipball/master) and then rename the 
 directory to the name of your website. [Install Grunt](http://gruntjs.com/getting-started), 
 and then install the dependencies for The Stack contained in `package.json` by running 
